@@ -2,10 +2,16 @@ require("dotenv").config(); //import variables from .env
 
 const Sequelize = require("sequelize");
 
+// process.env.DB_NAME,
+// process.env.DB_USER,
+// process.env.DB_PASSWORD,
+//  DB_SESSION_SECRET='been_unravelling_since_2014',
+//JAWSDB_URL=''
+
 const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASSWORD,
+  'tech_blog_db',
+  'root',
+  'vegetable',
   {
     //sets up connection to database using sequelize
     host: "localhost",
