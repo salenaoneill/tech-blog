@@ -64,6 +64,7 @@ router.get('/:id', (req, res) => {
             }
         ]
     })
+    
     //render single post
     .then(dbPostData => {
         if (!dbPostData) {
